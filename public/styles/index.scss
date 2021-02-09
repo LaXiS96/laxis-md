@@ -1,0 +1,41 @@
+@import "normalize.css/normalize";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+// https://material.io/design/color/dark-theme.html
+
+$background: #121212;
+$primary: #ff7f00;
+$text-emphasis: rgba(white, 87%);
+$text-hint: rgba(white, 60%);
+$text-disabled: rgba(white, 38%);
+
+::selection {
+  color: black;
+  background-color: $primary;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $background;
+  color: $text-emphasis;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($primary, 25%);
+  }
+}
+
+pre {
+  font-family: "Fira Code", monospace;
+  background-color: rgba(255, 255, 255, 0.2); // TODO
+  padding: 0.5rem;
+  margin: 1rem;
+  overflow-x: auto;
+  border-radius: 0.2rem;
+}

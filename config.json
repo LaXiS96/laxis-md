@@ -1,0 +1,9 @@
+{
+  "contentPath": "content",
+  "publicPath": "public",
+  "title": "LaXiS.it",
+  "sitemap": {
+    "index": "index.md",
+    "page": "pages/*"
+  }
+}
